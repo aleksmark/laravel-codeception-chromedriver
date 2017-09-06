@@ -9,7 +9,11 @@ RUN apt-get update && \
         supervisor \
         nginx \
         curl \
-        php7.0-fpm && \
+        php7.0-fpm \
+        php7.0-mbstring \
+        php7.0-zip \
+        php7.0-xml \
+        php7.0-curl && \
         rm -rf /var/lib/apt/lists/*
 
 RUN curl -sS https://getcomposer.org/installer | \

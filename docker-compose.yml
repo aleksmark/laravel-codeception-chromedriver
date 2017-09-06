@@ -9,3 +9,12 @@ services:
       - "80:80"
     volumes:
       - .:/var/www
+
+  chromedriver:
+    image: robcherry/docker-chromedriver
+    container_name: "chromedriver"
+    environment:
+      CHROMEDRIVER_WHITELISTED_IPS: ""
+      CHROMEDRIVER_URL_BASE: "/wd/hub"
+    security_opt:
+      - seccomp:unconfined
