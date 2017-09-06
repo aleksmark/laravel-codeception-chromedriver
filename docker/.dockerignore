@@ -1,0 +1,4 @@
+../storage/logs/*
+../storage/app/*
+../storage/framework/*
+../vendor

@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: ./docker
+    container_name: "app"
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www
