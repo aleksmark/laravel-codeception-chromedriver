@@ -24,7 +24,7 @@ WORKDIR /var/www
 
 RUN mkdir /var/run/php/
 
-ADD configs/php.ini /etc/php/7.0/fpm/99-custom.ini
+ADD configs/php.ini /etc/php/7.0/fpm/conf.d/99-custom.ini
 ADD configs/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 ADD configs/supervisord.conf /etc/supervisord.conf
 ADD configs/nginx.conf /etc/nginx/nginx.conf
